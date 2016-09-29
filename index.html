@@ -1,0 +1,40 @@
+<html>
+
+  <head>
+
+    <title>ejemplo css javascript</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript">
+        function mostrar1(){
+		document.getElementById("container2").style.display="block";
+		document.getElementById("container1").style.visibility="hidden";
+        }
+        function mostrar2(){
+                document.getElementById("container2").style.display="none";
+		document.getElementById("container1").style.visibility="visible";
+        }
+    </script>
+  </head>
+
+  <body>
+
+
+      <div id="header"></div>
+      <div id="container2" class="container2" style="display:none;">
+        <input type="text" name="caja">
+      <input type="text" name="caja2">
+          <span onclick="mostrar2()"><input type="submit" value="Regresar" /> </span>
+      </div>	
+      <div id="container1" class="container1"> 
+      <span onclick="mostrar1()"><input type="submit" value="Ingresa" /></span>    
+      </div>
+
+  </body>
+
+</html>    
+
+
+
+
+
+ 
